@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('tela de fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ /* ajuda a deixar o fundo visivel*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 153, 0, 0.432);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    z-index: 2;
+}
+
+h1 {
+    color: #333;
+    font-family: 'Cursive', sans-serif;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.item {
+    background-color: #f8f9fa;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* o hover é pra ter alguma "reação" quando passamos o mouse encima, por exmplo ficando levemnte cinza*/
+.item:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.02);
+}
+
+.item.selecionado {
+    background-color: #28a745;
+    color: white;
+}
+
+button.confirmar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+/* deixa o botão verde, o hover abaixo deixa ele vermelho*/
+button.confirmar:hover {
+    background-color: #218838;
+}
+
+button.cancelar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.cancelar:hover {
+    background-color: #c82333;
+}
+/* parte de baixo*/
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
+}
